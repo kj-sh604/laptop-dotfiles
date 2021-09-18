@@ -34,3 +34,4 @@ run /usr/bin/gnome-keyring-daemon --start --components=ssh
 run cbatticon
 run blueman-applet
 run indicator-keylock
+run xfce4-power-manager
