@@ -35,4 +35,4 @@ run cbatticon
 run blueman-applet
 run indicator-keylock
 run xfce4-power-manager
-run /home/kylert/.config/awesome/xinput.sh
+run /home/kylert/.config/awesome/xinput-daemon.sh
