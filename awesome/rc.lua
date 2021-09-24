@@ -262,7 +262,14 @@ globalkeys = gears.table.join(
               {description = "swap with next client by index", group = "client"}),
     awful.key({ modkey,  "Control" }, "Down", function () awful.client.swap.byidx( -1)    end,
               {description = "swap with previous client by index", group = "client"}),
-  
+
+    -- Notification Manipulation
+    awful.key({ modkey,          }, "n", function () naughty.suspend() end,
+              {description = "Suspend Notifications", group = "awesome"}),
+    awful.key({ modkey,          }, "m", function () naughty.resume() naughty.destroy_all_notifications() end,
+              {description = "Resume Notifications", group = "awesome"}),  
+
+
       -- Unmodified Keys - Kyle
 
   --[[  awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
