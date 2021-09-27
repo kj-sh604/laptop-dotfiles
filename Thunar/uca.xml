@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1632280439312906-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>7765_winebrowser.0</icon>
+	<name>Open as ROOT</name>
+	<unique-id>1632282837629380-1</unique-id>
+	<command>gksudo dbus-launch thunar %f</command>
+	<description>Open a directory as a root user</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>1846_whatsnew.0</icon>
+	<name>Edit as ROOT</name>
+	<unique-id>1632282949135048-2</unique-id>
+	<command>gksudo dbus-launch xed %f</command>
+	<description>Edit a file or something else as a root user</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+</actions>
