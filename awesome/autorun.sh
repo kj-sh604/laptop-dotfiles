@@ -7,7 +7,7 @@ function run {
   fi
 }
 
-run picom
+run picom --experimental-backends
 run nitrogen --restore
 run volumeicon
 run lxsession
@@ -36,3 +36,4 @@ run /home/kylert/.config/awesome/xinput-daemon.sh
 run blueman-applet
 run indicator-keylock
 run xfce4-power-manager
+run /usr/lib/xfce4/notifyd/xfce4-notifyd
