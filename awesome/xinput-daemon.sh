@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Circular Scrolling" 0
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Edge Scrolling" 0, 0, 0
