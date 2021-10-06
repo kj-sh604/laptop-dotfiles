@@ -3,6 +3,7 @@ if status is-interactive
 
     alias ls="lsd --group-dirs first -h --icon-theme unicode -L"
     alias td="cat to-do"
+    alias etd="vim to-do"
 
 
 end
