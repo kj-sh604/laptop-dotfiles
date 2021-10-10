@@ -73,7 +73,8 @@ myawesomemenu = {
 
 mymainmenu = awful.menu({ items = { { "apps", function() menubar.refresh() menubar.show() end, beautiful.awesome_icon },
                                     { "system", myawesomemenu },
-                                    { "terminal", terminal }
+                                    { "terminal", terminal },
+                                    { "run", function () awful.screen.focused().mypromptbox:run() end}
                                   }
                         })
 
