@@ -65,7 +65,7 @@ myawesomemenu = {
 --   { "manual", terminal .. " -e man awesome" },
    { "config", editor .. " " .. awesome.conffile },
    { "picom", function() awful.spawn("sh -c 'kate $HOME/.config/picom.conf'") end },
-   {"wall", function() awful.spawn("sh -c 'nitrogen'") end},
+   { "wall", function() awful.spawn("sh -c 'nitrogen'") end },
    { "refresh", awesome.restart },
    { "reboot" , function() awful.spawn("sh -c 'gksudo reboot now'") end },
 --   { "quit", function() awesome.quit() end },
@@ -249,24 +249,24 @@ globalkeys = gears.table.join(
               {description = "swap with previous client by index", group = "client"}),]]--
 
     -- Move window by direction in tiling layout
-    awful.key({ modkey, "Control" }, "Down", function (c) awful.client.swap.global_bydirection("down") c:raise() end,
+    awful.key({ modkey, "Mod1" }, "Down", function (c) awful.client.swap.global_bydirection("down") c:raise() end,
                {description = "swap with next window up", group = "client"}),
-    awful.key({ modkey, "Control" }, "Up", function (c) awful.client.swap.global_bydirection("up") c:raise() end,
+    awful.key({ modkey, "Mod1" }, "Up", function (c) awful.client.swap.global_bydirection("up") c:raise() end,
                {description = "swap with next window down", group = "client"}),
-    awful.key({ modkey, "Control" }, "Right", function (c) awful.client.swap.global_bydirection("right") c:raise() end,
-               {description = "swap next window right", group = "client"}),
-    awful.key({ modkey, "Control" }, "Left", function (c) awful.client.swap.global_bydirection("left") c:raise() end,
-               {description = "swap next window left", group = "client"}),
+    awful.key({ modkey, "Mod1" }, "Right", function (c) awful.client.swap.global_bydirection("right") c:raise() end,
+               {description = "swap with next window right", group = "client"}),
+    awful.key({ modkey, "Mod1" }, "Left", function (c) awful.client.swap.global_bydirection("left") c:raise() end,
+               {description = "swap with next window left", group = "client"}),
 
     -- Move window FOCUS by direction in tiling layout
-    awful.key({ modkey, "Shift" }, "Down", function (c) awful.client.focus.global_bydirection("down") c:lower() end,
-               {description = "focus next window up", group = "client"}),
-    awful.key({ modkey, "Shift" }, "Up", function (c) awful.client.focus.global_bydirection("up") c:lower() end,
-               {description = "focus next window down", group = "client"}),
-    awful.key({ modkey, "Shift" }, "Right", function (c) awful.client.focus.global_bydirection("right") c:lower() end,
-               {description = "focus next window right", group = "client"}),
-    awful.key({ modkey, "Shift" }, "Left", function (c) awful.client.focus.global_bydirection("left") c:lower() end,
-               {description = "focus next window left", group = "client"}),
+    awful.key({ modkey }, "Down", function (c) awful.client.focus.global_bydirection("down") c:lower() end,
+               {description = "focus to next window up", group = "client"}),
+    awful.key({ modkey }, "Up", function (c) awful.client.focus.global_bydirection("up") c:lower() end,
+               {description = "focus to next window down", group = "client"}),
+    awful.key({ modkey }, "Right", function (c) awful.client.focus.global_bydirection("right") c:lower() end,
+               {description = "focus to next window right", group = "client"}),
+    awful.key({ modkey }, "Left", function (c) awful.client.focus.global_bydirection("left") c:lower() end,
+               {description = "focus to next window left", group = "client"}),
 
     -- Alt-Tab functionality in maximized layout
     awful.key({ "Mod1",           }, "Tab",
@@ -277,8 +277,6 @@ globalkeys = gears.table.join(
             end
         end,
         {description = "go back", group = "client"}),
-
-
     -- Application Hotkeys
       --[[ Template
       awful.key({ [KEY], [KEY]          }, [KEY], function () awful.spawn("[APPLICATION_NAME]") end,
@@ -302,15 +300,15 @@ globalkeys = gears.table.join(
               {description = "Launch HTOP", group = "launcher"}),
 
     -- Brightness Hotkeys
-    awful.key({ }, "XF86MonBrightnessDown", function () awful.util.spawn("xbacklight -dec 10") end),
-    awful.key({ }, "XF86MonBrightnessUp", function () awful.util.spawn("xbacklight -inc 10") end),
+    awful.key({ }, "XF86MonBrightnessDown", function () awful.util.spawn("xbacklight -dec 15") end),
+    awful.key({ }, "XF86MonBrightnessUp", function () awful.util.spawn("xbacklight -inc 15") end),
 
 
 
     -- awesome window manager Controls
     awful.key({ "Control", "Mod1" }, "BackSpace", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
-    --[[awful.key({ "Control", "Shift"   }, "Delete", awesome.quit,
+    --[[awful.key({ "Control", "Shift"   }, "Delete", awesome.quit
               {description = "quit awesome", group = "awesome"}),]]--
 
 --[[    awful.key({ "Control", "Mod1"          }, "BackSpace", function () awful.spawn("sh -c 'pkill -9 -u $USER'") end,
@@ -321,15 +319,16 @@ globalkeys = gears.table.join(
 
 
 
-    -- Tiled Window Manipulation
+    -- Tiled Window Sizing and Client count/columns
 
-    awful.key({ modkey,           }, "Right",     function () awful.tag.incmwfact( 0.05)          end,
+    awful.key({ modkey, "Control" }, "Right",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),
-    awful.key({ modkey,           }, "Left",     function () awful.tag.incmwfact(-0.05)          end,
+    awful.key({ modkey, "Control" }, "Left",     function () awful.tag.incmwfact(-0.05)          end,
               {description = "decrease master width factor", group = "layout"}),
-    awful.key({ modkey,           }, "Up",     function () awful.client.incwfact( 0.05)          end,
+
+    awful.key({ modkey, "Control" }, "Up",     function () awful.client.incwfact( 0.05)          end,
               {description = "increase master height factor", group = "layout"}),
-    awful.key({ modkey,           }, "Down",     function () awful.client.incwfact(-0.05)          end,
+    awful.key({ modkey, "Control" }, "Down",     function () awful.client.incwfact(-0.05)          end,
               {description = "decrease master height factor", group = "layout"}),
 
 
@@ -346,7 +345,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
-    awful.key({ modkey, "Mod1" }, "n",
+    awful.key({ modkey, "Shift" }, ",",
               function ()
                   local c = awful.client.restore()
                   -- Focus restored client
@@ -384,16 +383,15 @@ clientkeys = gears.table.join(
             c:raise()
         end,
         {description = "toggle fullscreen", group = "client"}),
-    awful.key({ "Mod1",  }, "F4",      function (c) c:kill()                         end,
+    awful.key({ "Mod1",  }, "F4",      function (c) c:kill() end,
               {description = "close", group = "client"}),
-    awful.key({ "Shift", "Control" }, "space",  awful.client.floating.toggle                     ,
+    awful.key({ "Shift", "Control" }, "space",  awful.client.floating.toggle,
               {description = "toggle floating", group = "client"}),
 
-
     -- Sticky Window and Always on top toggle
-    awful.key({ modkey, "Mod1" }, ".", function(c) c.ontop = not c.ontop end,
+    awful.key({modkey, "Shift" }, ".", function(c) c.ontop = not c.ontop end,
               {description = "toggle always on top", group = "client"}),
-    awful.key({ modkey, "Mod1" }, "slash",   function (c) c.sticky = not c.sticky  end,
+    awful.key({ modkey, "Shift" }, "slash",   function (c) c.sticky = not c.sticky  end,
               {description = "toggle sticky", group = "client"}),
 
     -- Original Keep On Top Function
@@ -409,7 +407,7 @@ clientkeys = gears.table.join(
               {description = "move to master", group = "client"}),
     awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
               {description = "move to screen", group = "client"}),
-    awful.key({ modkey, "Mod1" }, "m",
+    awful.key({ modkey, "Shift"           }, "m",
         function (c)
             -- The client currently has the input focus, so it cannot be
             -- minimized, since minimized clients can't have the focus.
@@ -428,7 +426,7 @@ clientkeys = gears.table.join(
             c:raise()
         end ,
         {description = "(un)maximize vertically", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "m",
+    awful.key({ modkey, "Mod1"   }, "m",
         function (c)
             c.maximized_horizontal = not c.maximized_horizontal
             c:raise()
@@ -462,7 +460,7 @@ for i = 1, 9 do
                   end,
                   {description = "toggle tag #" .. i, group = "tag"}), ]]--
         -- Move client to tag.
-        awful.key({ modkey, "Mod1" }, "#" .. i + 9,
+        awful.key({ modkey, "Shift" }, "#" .. i + 9,
                   function ()
                       if client.focus then
                           local tag = client.focus.screen.tags[i]
@@ -473,7 +471,7 @@ for i = 1, 9 do
                   end,
                   {description = "move focused client to tag #"..i, group = "tag"}),
         -- Move client to prev/next tag and switch to it
-        awful.key({ modkey, "Mod1" }, "Left",
+        awful.key({ modkey, "Shift" }, "Left",
               function ()
                   -- get current tag
                   local t = client.focus and client.focus.first_tag or nil
@@ -486,7 +484,7 @@ for i = 1, 9 do
                   awful.tag.viewprev()
               end,
                   {description = "move client to previous tag and switch to it", group = "tag"}),
-          awful.key({ modkey, "Mod1" }, "Right",
+          awful.key({ modkey, "Shift" }, "Right",
               function ()
                   -- get current tag
                   local t = client.focus and client.focus.first_tag or nil
