@@ -223,6 +223,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
 
+    -- Change window focus in maximized layout
     awful.key({ modkey,           }, "Tab",
         function ()
             awful.client.focus.byidx( 1)
@@ -235,6 +236,9 @@ globalkeys = gears.table.join(
         end,
         {description = "focus previous by index", group = "client"}
     ),
+
+    -- --------------------------------------------------------------
+
     awful.key({ modkey,           }, "Menu", function () mymainmenu:show() end,
               {description = "show main menu", group = "awesome"}),
 
@@ -244,7 +248,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey,   "Control"}, "Up", function () awful.client.swap.byidx( -1)    end,
               {description = "swap with previous client by index", group = "client"}),]]--
 
-    -- Layout manipulation
+    -- Move window by direction in tiling layout
     awful.key({ modkey, "Control" }, "Down", function (c) awful.client.swap.global_bydirection("down") c:raise() end,
                {description = "swap with next window up", group = "client"}),
     awful.key({ modkey, "Control" }, "Up", function (c) awful.client.swap.global_bydirection("up") c:raise() end,
@@ -254,7 +258,17 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Control" }, "Left", function (c) awful.client.swap.global_bydirection("left") c:raise() end,
                {description = "swap next window left", group = "client"}),
 
-    -- Alt-Tab functionality
+    -- Move window FOCUS by direction in tiling layout
+    awful.key({ modkey, "Mod1" }, "Down", function (c) awful.client.focus.global_bydirection("down") c:lower() end,
+               {description = "focus next window up", group = "client"}),
+    awful.key({ modkey, "Mod1" }, "Up", function (c) awful.client.focus.global_bydirection("up") c:lower() end,
+               {description = "focus next window down", group = "client"}),
+    awful.key({ modkey, "Mod1" }, "Right", function (c) awful.client.focus.global_bydirection("right") c:lower() end,
+               {description = "focus next window right", group = "client"}),
+    awful.key({ modkey, "Mod1" }, "Left", function (c) awful.client.focus.global_bydirection("left") c:lower() end,
+               {description = "focus next window left", group = "client"}),
+
+    -- Alt-Tab functionality in maximized layout
     awful.key({ "Mod1",           }, "Tab",
         function ()
             awful.client.focus.history.previous()
@@ -332,7 +346,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
-    awful.key({ modkey, "Mod1" }, "Left",
+    awful.key({ modkey, "Mod1" }, "n",
               function ()
                   local c = awful.client.restore()
                   -- Focus restored client
@@ -395,7 +409,7 @@ clientkeys = gears.table.join(
               {description = "move to master", group = "client"}),
     awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
               {description = "move to screen", group = "client"}),
-    awful.key({ "Mod1",           }, "Left",
+    awful.key({ modkey, "Mod1" }, "m",
         function (c)
             -- The client currently has the input focus, so it cannot be
             -- minimized, since minimized clients can't have the focus.
