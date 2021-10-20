@@ -1,6 +1,7 @@
 acpi
 acpid
 adriconf
+alacritty
 alsa-firmware
 alsa-utils
 android-apktool
@@ -25,6 +26,7 @@ aspnet-targeting-pack
 atom
 audacity
 audiofile
+auto-cpufreq
 autoconf
 automake
 awesome-git
@@ -46,6 +48,7 @@ bluez
 bluez-cups
 brasero
 brave-bin
+breeze
 breeze-gtk
 broot
 btrfs-progs
@@ -57,10 +60,12 @@ chromedriver
 clamav
 clamtk
 clipgrab
+cmatrix
 cndrvcups-common-lb
 cndrvcups-lb
 coin-or-mp
 cool-retro-term
+cowsay
 cryptsetup
 ctags
 cups
@@ -81,7 +86,7 @@ dkms
 dmg2img
 dmidecode
 dnsmasq
-dolphin
+doge
 dosfstools
 dotnet-runtime-3.1
 dotnet-sdk
@@ -112,6 +117,7 @@ exo
 f2fs-tools
 fakeroot
 ffmpegthumbnailer
+figlet
 file-roller
 filezilla
 findutils
@@ -146,6 +152,7 @@ gnome-music
 gnome-photos
 gnome-software
 gnome-software-packagekit-plugin
+gnome-system-monitor
 gnome-themes-extra
 gnome-todo
 gnome-tweaks
@@ -176,6 +183,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+gvim
 hdf5
 hplip
 hplip-plugin
@@ -240,11 +248,10 @@ keditbookmarks
 kfind
 khelpcenter
 kolourpaint
-konqueror
+konsole
 kotlin
 krita
 krita-plugin-gmic
-kwrite
 languagetool
 lib32-libsoup
 lib32-libva-intel-driver
@@ -304,19 +311,18 @@ modemmanager
 monitoring-plugins
 mono-msbuild
 mono-tools
-mousepad
 movit
 mplayer
 mtools
 mujs
 mypaint
+mysql-workbench
 nano
 neofetch
 netstat-nat
 network-manager-applet
 nilfs-utils
 nitrogen
-notepadqq
 noto-fonts-emoji
 ntfs-3g
 obs-studio
@@ -333,12 +339,11 @@ pciutils
 perl-crypt-passwdmd5
 phonon-qt4
 photoflare
-picom
+php
+picom-git
 pinta
 pkgconf
 pkgfile
-plasma-desktop
-plasma-workspace
 poppler-glib
 postgresql-libs
 ppp
@@ -399,6 +404,7 @@ sane-frontends
 sane-gt68xx-firmware
 sdl_image
 seahorse
+shellcheck-static
 shotwell
 simple-scan
 simplenote-electron-bin
@@ -412,7 +418,6 @@ sudo
 sword
 sysfsutils
 system-config-printer
-systemsettings
 teamviewer
 telegram-desktop
 testdisk
@@ -450,7 +455,6 @@ unixodbc
 usbutils
 vcdimager
 vi
-vim
 vlc
 vmware-horizon-client
 vmware-horizon-integrated-printing
@@ -475,7 +479,6 @@ xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
 xdotool
-xed
 xf86-input-evdev
 xf86-input-libinput
 xf86-input-synaptics
@@ -495,6 +498,8 @@ xfce4-clipman-plugin
 xfce4-power-manager
 xfce4-screensaver
 xfce4-screenshooter
+xfce4-session
+xfce4-settings
 xfce4-terminal
 xfsprogs
 xine-ui
