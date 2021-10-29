@@ -324,6 +324,10 @@ globalkeys = gears.table.join(
   awful.key({ "Control", "Shift" }, "Delete", function () awful.spawn("gnome-system-monitor") end,
     {description = "gnome-system-monitor", group = "launcher"}),
 
+  -- Clipboard Manager
+  awful.key({ modkey }, "c", function () awful.spawn.easy_async_with_shell("xfce4-clipman-history") end,
+                {description = "open clipboard history", group = "launcher"}),
+
 
 
   -- Tiled Window Sizing and Client count/columns
