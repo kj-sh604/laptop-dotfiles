@@ -37,3 +37,4 @@ run blueman-applet
 run indicator-keylock
 run xfce4-power-manager
 run /usr/lib/xfce4/notifyd/xfce4-notifyd
+run ibus-daemon -drxR
