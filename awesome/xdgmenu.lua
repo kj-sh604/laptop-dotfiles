@@ -1,3 +1,7 @@
+ local menue0e4fc6213e8b3593495a7260c3a4c2e = {
+     {"Onboard", "onboard", "/usr/share/icons/hicolor/16x16/apps/onboard.png" },
+ }
+
  local menu98edb85b00d9527ad5acebe451b3fae6 = {
      {"Archive Manager", "file-roller "},
      {"Arcticfox Config", "\"/opt/Arcticfox Config/arcticfox-config\" "},
@@ -18,11 +22,12 @@
      {"Image Viewer", "gpicview ", "/usr/share/icons/hicolor/48x48/apps/gpicview.png" },
      {"Like Task Manager", "ltm"},
      {"Maps", "gapplication launch org.gnome.Maps "},
+     {"Onboard", "onboard", "/usr/share/icons/hicolor/16x16/apps/onboard.png" },
      {"Passwords and Keys", "seahorse"},
      {"QTalarm", "qtalarm", "/usr/share/icons/hicolor/16x16/apps/1349069370_Alarm_Clock.png" },
      {"Screenshot", "xfce4-screenshooter", "/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png" },
      {"Simplenote", "/opt/Simplenote/simplenote ", "/usr/share/icons/hicolor/16x16/apps/simplenote.png" },
-     {"Text Editor", "xed ", "/usr/share/icons/gnome/16x16/apps/accessories-text-editor.png" },
+     {"Text Editor", "gedit "},
      {"To Do", "gnome-todo"},
      {"USB Image Writer", "mintstick -m iso"},
      {"USB Stick Formatter", "mintstick -m format"},
@@ -113,6 +118,7 @@
      {"Trello", "trello --force-device-scale-factor=1.0 --disable-gpu-driver-bug-workarounds --use-gl=desktop --enable-accelerated-video-decode --enable-gpu-rasterization --enable-zero-copy --enable-features=VaapiVideoDecoder --disable-features=UseOzonePlatform", "/usr/share/pixmaps/trello.png" },
      {"VMware Horizon Client", "sh -c 'GTK_THEME=Adwaita vmware-view ' ", "/usr/share/icons/hicolor/16x16/apps/vmware-horizon.png" },
      {"Viber", "viber ", "/usr/share/icons/hicolor/16x16/apps/viber.png" },
+     {"What IP", "/usr/bin/whatip "},
      {"Zenmap", "zenmap ", "///usr/share/zenmap/pixmaps/zenmap.png" },
      {"Zenmap (as root)", "/usr/share/zenmap/su-to-zenmap.sh ", "///usr/share/zenmap/pixmaps/zenmap.png" },
      {"Zoom", "/usr/bin/zoom ", "/usr/share/pixmaps/Zoom.png" },
@@ -184,7 +190,6 @@
      {"Celluloid", "celluloid "},
      {"Cheese", "cheese"},
      {"Clapper", "com.github.rafostar.Clapper "},
-     {"ClipGrab", "clipgrab", "///usr/share/pixmaps/clipgrab.png" },
      {"EasyTAG", "easytag ", "/usr/share/icons/hicolor/16x16/apps/easytag.png" },
      {"Gydl", "gydl.py"},
      {"LBRY", "/opt/LBRY/lbry ", "/usr/share/icons/hicolor/32x32/apps/lbry.png" },
@@ -251,6 +256,7 @@
  }
 
 xdgmenu = {
+    {"Accessibility", menue0e4fc6213e8b3593495a7260c3a4c2e},
     {"Accessories", menu98edb85b00d9527ad5acebe451b3fae6},
     {"Archlinux", menu78059f1898ed518c6ccd6a6392fa82c1},
     {"Education", menude7a22a0c94aa64ba2449e520aa20c99},
