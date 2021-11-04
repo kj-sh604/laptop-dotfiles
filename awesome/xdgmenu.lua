@@ -140,6 +140,7 @@
      {"Master PDF Editor", "/opt/master-pdf-editor-4/masterpdfeditor4 ", "///opt/master-pdf-editor-4/masterpdfeditor4.png" },
      {"Okular", "okular ", "/usr/share/icons/hicolor/16x16/apps/okular.png" },
      {"PDFsam", "pdfsam", "/usr/share/icons/hicolor/16x16/apps/pdfsam.png" },
+     {"ReText", "/usr/bin/retext ", "/usr/share/icons/hicolor/16x16/apps/retext.png" },
      {"RedNotebook", "rednotebook", "/usr/share/icons/hicolor/16x16/apps/rednotebook.png" },
      {"Standard Notes", "standardnotes-desktop", "/usr/share/icons/standard-notes.png" },
  }
