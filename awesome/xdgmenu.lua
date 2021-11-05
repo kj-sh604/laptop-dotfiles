@@ -31,9 +31,8 @@
      {"To Do", "gnome-todo"},
      {"USB Image Writer", "mintstick -m iso"},
      {"USB Stick Formatter", "mintstick -m format"},
-     {"VSCodium", "/usr/share/vscodium-bin/bin/codium --no-sandbox --unity-launch ", "/usr/share/pixmaps/vscodium.png" },
      {"Vim", "xterm -e vim ", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
-     {"Visual Studio Code", "env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/code_code.desktop /var/lib/snapd/snap/bin/code --force-user-env --unity-launch ", "///var/lib/snapd/snap/code/78/meta/gui/com.visualstudio.code.png" },
+     {"Visual Studio Code", "/opt/visual-studio-code/code --no-sandbox --unity-launch ", "/usr/share/icons/visual-studio-code.png" },
      {"Weather", "gapplication launch org.gnome.Weather"},
      {"Winetricks", "winetricks --gui"},
      {"balenaEtcher", "/opt/balenaEtcher/balena-etcher-electron ", "/usr/share/icons/hicolor/16x16/apps/balena-etcher-electron.png" },
@@ -179,9 +178,8 @@
      {"Qt4 Linguist ", "linguist-qt4", "/usr/share/icons/hicolor/16x16/apps/linguist-qt4.png" },
      {"Qt4 QDbusViewer ", "qdbusviewer-qt4", "/usr/share/icons/hicolor/32x32/apps/qdbusviewer-qt4.png" },
      {"Sublime Text", "subl ", "/usr/share/icons/hicolor/16x16/apps/sublime-text.png" },
-     {"VSCodium", "/usr/share/vscodium-bin/bin/codium --no-sandbox --unity-launch ", "/usr/share/pixmaps/vscodium.png" },
      {"Violet UML Editor", "/usr/share/violetumleditor/violetumleditor.sh", "/usr/share/icons/hicolor/72x72/apps/violetumleditor.png" },
-     {"Visual Studio Code", "env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/code_code.desktop /var/lib/snapd/snap/bin/code --force-user-env --unity-launch ", "///var/lib/snapd/snap/code/78/meta/gui/com.visualstudio.code.png" },
+     {"Visual Studio Code", "/opt/visual-studio-code/code --no-sandbox --unity-launch ", "/usr/share/icons/visual-studio-code.png" },
      {"gsharp", "/usr/bin/gsharp"},
  }
 
