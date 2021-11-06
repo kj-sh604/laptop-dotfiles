@@ -7,4 +7,4 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Accel Constant Deceleration
 xinput set-prop pointer:"ELECOM ELECOM TrackBall Mouse" "libinput Accel Speed" 0.300000
 xinput set-prop pointer:"ELECOM ELECOM TrackBall Mouse" "libinput Scrolling Pixel Distance" 50
 
-while true; do state=$(lsusb) && sleep 2 && [ "$state != $(lsusb)" ] && /home/kylert/.config/awesome/xinput.sh; done
+while true; do state=$(lsusb) && sleep 2 && [ "$state" != "$(lsusb)" ] && /home/kylert/.config/awesome/xinput.sh; done
