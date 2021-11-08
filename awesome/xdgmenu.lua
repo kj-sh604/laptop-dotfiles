@@ -168,7 +168,7 @@
      {"Meld", "meld ", "/usr/share/icons/hicolor/16x16/apps/org.gnome.meld.png" },
      {"Mono Documentation", "/usr/bin/monodoc", "/usr/share/icons/hicolor/16x16/apps/monodoc.png" },
      {"MonoDevelop", "monodevelop ", "/usr/share/icons/hicolor/16x16/apps/monodevelop.png" },
-     {"MySQL Workbench", "sh -c \"GTK_THEME=Adwaita mysql-workbench \"", "/usr/share/icons/hicolor/16x16/apps/mysql-workbench.png" },
+     {"MySQL Workbench", "mysql-workbench ", "/usr/share/icons/hicolor/16x16/apps/mysql-workbench.png" },
      {"Qt Assistant", "assistant", "/usr/share/icons/hicolor/32x32/apps/assistant.png" },
      {"Qt Designer", "designer ", "/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png" },
      {"Qt Linguist", "linguist ", "/usr/share/icons/hicolor/16x16/apps/linguist.png" },
