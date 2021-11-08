@@ -31,7 +31,7 @@ run /usr/bin/gnome-keyring-daemon --start --components=pkcs11
 run /usr/lib/gsd-power
 run /usr/bin/gnome-keyring-daemon --start --components=secrets
 run /usr/bin/gnome-keyring-daemon --start --components=ssh
-run cbatticon
+run cbatticon -x xfce4-power-manager-settings
 run /home/kylert/.config/awesome/xinput-daemon.sh
 run blueman-applet
 run indicator-keylock
