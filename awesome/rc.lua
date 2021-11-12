@@ -343,13 +343,13 @@ globalkeys = gears.table.join(
     {description = "decrease master height factor", group = "layout"}),
 
 
-  awful.key({ modkey }, "equal", function () awful.tag.incnmaster( 1, nil, true) end,
+  awful.key({ modkey }, "minus", function () awful.tag.incnmaster( 1, nil, true) end,
     {description = "increase the number of master clients", group = "layout"}),
-  awful.key({ modkey }, "minus", function () awful.tag.incnmaster(-1, nil, true) end,
+  awful.key({ modkey }, "equal", function () awful.tag.incnmaster(-1, nil, true) end,
     {description = "decrease the number of master clients", group = "layout"}),
-  awful.key({ modkey }, "]", function () awful.tag.incncol( 1, nil, true) end,
+  awful.key({ modkey }, "[", function () awful.tag.incncol( 1, nil, true) end,
     {description = "increase the number of columns", group = "layout"}),
-  awful.key({ modkey }, "[", function () awful.tag.incncol(-1, nil, true) end,
+  awful.key({ modkey }, "]", function () awful.tag.incncol(-1, nil, true) end,
     {description = "decrease the number of columns", group = "layout"}),
   awful.key({ modkey }, "j", function () awful.layout.inc( 1) end,
     {description = "select next", group = "layout"}),
