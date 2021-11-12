@@ -309,7 +309,7 @@ globalkeys = gears.table.join(
   awful.key({ }, "XF86MonBrightnessUp", function () awful.spawn.easy_async_with_shell("xbacklight -inc 15") end),
 
   -- Emoji Picker
-  awful.key({ modkey }, "grave", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.local/share/Blista-Kanjo-Emoji/blista-emoji-picker'") end,
+  awful.key({ modkey }, "q", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.local/share/Blista-Kanjo-Emoji/blista-emoji-picker'") end,
     {description = "Launch Emoji Chooser", group = "launcher"}),
 
   -- awesome window manager Controls
@@ -325,7 +325,7 @@ globalkeys = gears.table.join(
     {description = "gnome-system-monitor", group = "launcher"}),
 
   -- Clipboard Manager
-  awful.key({ modkey }, "q", function () awful.spawn.easy_async_with_shell("xfce4-clipman-history") end,
+  awful.key({ modkey }, "grave", function () awful.spawn.easy_async_with_shell("xfce4-clipman-history") end,
                 {description = "open clipboard history", group = "launcher"}),
 
 
