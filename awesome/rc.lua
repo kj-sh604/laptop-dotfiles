@@ -75,7 +75,7 @@ myawesomemenu = {
   { "suspend", function() awful.spawn.easy_async_with_shell("sh -c 'systemctl suspend'") end},
   { "logout", function () awful.spawn("sh -c 'pkill -9 -u $USER'") end },
   { "lock", function() awful.spawn.easy_async_with_shell("sh -c 'xflock4'") end},
-  
+
 }
 
 mymainmenu = awful.menu({ items = { { "applications", xdgmenu, beautiful.awesome_icon },
@@ -431,13 +431,13 @@ clientkeys = gears.table.join(
       c:raise()
     end,
     {description = "(un)maximize", group = "client"}),
-  awful.key({ modkey, "Control" }, "m",
+  awful.key({ modkey, "Control" }, "Return",
     function (c)
       c.maximized_vertical = not c.maximized_vertical
       c:raise()
     end,
     {description = "(un)maximize vertically", group = "client"}),
-  awful.key({ modkey, "Mod1" }, "m",
+  awful.key({ modkey, "Mod1" }, "Return",
     function (c)
       c.maximized_horizontal = not c.maximized_horizontal
       c:raise()
