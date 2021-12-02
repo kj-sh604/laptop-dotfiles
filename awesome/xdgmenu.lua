@@ -14,6 +14,7 @@
      {"Clocks", "gnome-clocks"},
      {"Disks", "gnome-disks"},
      {"FSearch", "fsearch"},
+     {"Files", "nautilus --new-window "},
      {"Firmware", "gnome-firmware"},
      {"Fonts", "gnome-font-viewer "},
      {"GVim", "gvim -f ", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
@@ -59,12 +60,14 @@
  }
 
  local menu251bd8143891238ecedc306508e29017 = {
+     {"Steam (Native)", "/usr/bin/steam-native ", "/usr/share/icons/hicolor/16x16/apps/steam.png" },
+     {"Steam (Runtime)", "/usr/bin/steam-runtime ", "/usr/share/icons/hicolor/16x16/apps/steam.png" },
      {"Xdotool Gui", "/usr/bin/xdotool-gui", "///usr/share/xdotool-gui/xdotoolgui.gif" },
  }
 
  local menud334dfcea59127bedfcdbe0a3ee7f494 = {
      {"Agave", "agave", "/usr/share/icons/hicolor/16x16/apps/agave.png" },
-     {"Boxy SVG", "env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/boxy-svg_boxy-svg.desktop /var/lib/snapd/snap/bin/boxy-svg ", "///var/lib/snapd/snap/boxy-svg/49/meta/gui/icon.png" },
+     {"Boxy SVG", "env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/boxy-svg_boxy-svg.desktop /var/lib/snapd/snap/bin/boxy-svg ", "///var/lib/snapd/snap/boxy-svg/51/meta/gui/icon.png" },
      {"Color Picker", "gcolor3"},
      {"Darktable", "/usr/bin/darktable ", "/usr/share/icons/hicolor/16x16/apps/darktable.png" },
      {"Document Scanner", "simple-scan"},
@@ -98,6 +101,7 @@
  local menuc8205c7636e728d448c2774e6a4a944b = {
      {"Avahi SSH Server Browser", "/usr/bin/bssh", "/usr/share/icons/gnome/16x16/devices/network-wired.png" },
      {"Avahi VNC Server Browser", "/usr/bin/bvnc", "/usr/share/icons/gnome/16x16/devices/network-wired.png" },
+     {"Brave", "brave ", "/usr/share/icons/hicolor/16x16/apps/brave-desktop.png" },
      {"Discord", "/usr/bin/discord", "/usr/share/pixmaps/discord.png" },
      {"FileZilla", "filezilla", "/usr/share/icons/hicolor/16x16/apps/filezilla.png" },
      {"Firefox", "/usr/lib/firefox/firefox ", "/usr/share/icons/hicolor/16x16/apps/firefox.png" },
@@ -110,12 +114,14 @@
      {"LanXchange", "lxcr", "/usr/share/pixmaps/lanxchange.png" },
      {"Open on connected device via KDE Connect", "kdeconnect-handler --open "},
      {"Slack", "/usr/bin/slack -s ", "/usr/share/pixmaps/slack.png" },
+     {"Steam (Native)", "/usr/bin/steam-native ", "/usr/share/icons/hicolor/16x16/apps/steam.png" },
+     {"Steam (Runtime)", "/usr/bin/steam-runtime ", "/usr/share/icons/hicolor/16x16/apps/steam.png" },
      {"TeamViewer", "/opt/teamviewer/tv_bin/script/teamviewer", "/usr/share/icons/hicolor/16x16/apps/TeamViewer.png" },
      {"Telegram Desktop", "telegram-desktop -- ", "/usr/share/icons/hicolor/16x16/apps/telegram.png" },
      {"Tor Browser (en-US)", "/usr/bin/tor-browser ", "/usr/share/icons/hicolor/128x128/apps/tor-browser.png" },
      {"Transmission", "transmission-gtk ", "/usr/share/pixmaps/transmission.png" },
      {"Trello", "trello --force-device-scale-factor=1.0 --disable-gpu-driver-bug-workarounds --use-gl=desktop --enable-accelerated-video-decode --enable-gpu-rasterization --enable-zero-copy --enable-features=VaapiVideoDecoder --disable-features=UseOzonePlatform", "/usr/share/pixmaps/trello.png" },
-     {"VMware Horizon Client", "sh -c 'GTK_THEME=Adwaita vmware-view ' ", "/usr/share/icons/hicolor/16x16/apps/vmware-horizon.png" },
+     {"VMware Horizon Client", "vmware-view ", "/usr/share/icons/hicolor/16x16/apps/vmware-horizon.png" },
      {"Viber", "viber ", "/usr/share/icons/hicolor/16x16/apps/viber.png" },
      {"What IP", "/usr/bin/whatip "},
      {"Zenmap", "zenmap ", "///usr/share/zenmap/pixmaps/zenmap.png" },
@@ -124,7 +130,7 @@
  }
 
  local menudf814135652a5a308fea15bff37ea284 = {
-     {"Calendar", "gnome-calendar"},
+     {"Calendar", "gnome-calendar "},
      {"Contacts", "gnome-contacts"},
      {"Dictionary", "gnome-dictionary"},
      {"Document Viewer", "evince "},
@@ -168,7 +174,7 @@
      {"Meld", "meld ", "/usr/share/icons/hicolor/16x16/apps/org.gnome.meld.png" },
      {"Mono Documentation", "/usr/bin/monodoc", "/usr/share/icons/hicolor/16x16/apps/monodoc.png" },
      {"MonoDevelop", "monodevelop ", "/usr/share/icons/hicolor/16x16/apps/monodevelop.png" },
-     {"MySQL Workbench", "mysql-workbench ", "/usr/share/icons/hicolor/16x16/apps/mysql-workbench.png" },
+     {"MySQL Workbench", "sh -c 'GTK_THEME=Adwaita mysql-workbench '", "/usr/share/icons/hicolor/16x16/apps/mysql-workbench.png" },
      {"Qt Assistant", "assistant", "/usr/share/icons/hicolor/32x32/apps/assistant.png" },
      {"Qt Designer", "designer ", "/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png" },
      {"Qt Linguist", "linguist ", "/usr/share/icons/hicolor/16x16/apps/linguist.png" },
@@ -191,6 +197,7 @@
      {"Clapper", "com.github.rafostar.Clapper "},
      {"EasyTAG", "easytag ", "/usr/share/icons/hicolor/16x16/apps/easytag.png" },
      {"Gydl", "gydl.py"},
+     {"HandBrake", "ghb "},
      {"LBRY", "/opt/LBRY/lbry ", "/usr/share/icons/hicolor/32x32/apps/lbry.png" },
      {"Music", "gnome-music"},
      {"OBS Studio", "obs", "/usr/share/icons/hicolor/256x256/apps/com.obsproject.Studio.png" },
@@ -242,6 +249,7 @@
      {"Software", "gnome-software "},
      {"Startup Disk Creator", "usb-creator-kde"},
      {"System Monitor", "gnome-system-monitor"},
+     {"SystemdGenie", "systemdgenie", "/usr/share/icons/gnome/16x16/categories/preferences-desktop.png" },
      {"Thunar File Manager", "thunar ", "/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png" },
      {"USB Flasher", "popsicle-gtk ", "/usr/share/icons/hicolor/16x16/apps/com.system76.Popsicle.png" },
      {"UXTerm", "uxterm", "/usr/share/pixmaps/xterm-color_48x48.xpm" },
