@@ -10,7 +10,7 @@ run () {
 run picom
 run nitrogen --restore
 run volumeicon
-run lxsession
+# run lxsession
 run xfce4-volumed-pulse
 run /usr/lib/gsd-datetime
 # run /usr/lib/baloo_file
@@ -38,3 +38,4 @@ run indicator-keylock
 run xfce4-power-manager
 run /usr/lib/xfce4/notifyd/xfce4-notifyd
 run ibus-daemon -drxR
+run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
