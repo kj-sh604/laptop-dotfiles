@@ -326,6 +326,10 @@ globalkeys = gears.table.join(
   awful.key({ modkey }, "q", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.local/share/Blista-Kanjo-Emoji/blista-emoji-picker'") end,
     {description = "Launch Emoji Chooser", group = "launcher"}),
 
+  -- Set Default Display Configuration on a laptop
+awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.config/awesome/default-screen-layout.sh'") end,
+                {description = "reset to default monitor configuration", group = "launcher"}),
+
   -- awesome window manager Controls
   awful.key({ "Control", "Mod1" }, "BackSpace", awesome.restart,
     {description = "reload awesome", group = "awesome"}),
