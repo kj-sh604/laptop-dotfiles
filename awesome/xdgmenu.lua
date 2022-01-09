@@ -6,7 +6,7 @@
      {"Archive Manager", "file-roller "},
      {"Arcticfox Config", "\"/opt/Arcticfox Config/arcticfox-config\" "},
      {"Arcticfox Monitor", "\"/opt/Arcticfox Monitor/arcticfox-monitor\" "},
-     {"Atom", "env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom ", "/usr/share/icons/hicolor/16x16/apps/atom.png" },
+     {"Atom", "env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom "},
      {"Calculator", "gnome-calculator"},
      {"Character Map", "gucharmap", "/usr/share/icons/gnome/16x16/apps/accessories-character-map.png" },
      {"Characters", "/usr/bin/gnome-characters"},
@@ -28,7 +28,7 @@
      {"QTalarm", "qtalarm", "/usr/share/icons/hicolor/16x16/apps/1349069370_Alarm_Clock.png" },
      {"Screenshot", "xfce4-screenshooter", "/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png" },
      {"Simplenote", "/opt/Simplenote/simplenote ", "/usr/share/icons/hicolor/16x16/apps/simplenote.png" },
-     {"Text Editor", "gedit "},
+     {"Text Editor", "xed ", "/usr/share/icons/gnome/16x16/apps/accessories-text-editor.png" },
      {"To Do", "gnome-todo"},
      {"USB Image Writer", "mintstick -m iso"},
      {"USB Stick Formatter", "mintstick -m format"},
@@ -36,7 +36,6 @@
      {"Visual Studio Code", "/opt/visual-studio-code/code --no-sandbox --unity-launch ", "/usr/share/icons/visual-studio-code.png" },
      {"Weather", "gapplication launch org.gnome.Weather"},
      {"Winetricks", "winetricks --gui"},
-     {"balenaEtcher", "/opt/balenaEtcher/balena-etcher-electron ", "/usr/share/icons/hicolor/16x16/apps/balena-etcher-electron.png" },
      {"nitrogen", "nitrogen", "/usr/share/icons/hicolor/16x16/apps/nitrogen.png" },
      {"picom", "picom"},
  }
@@ -67,7 +66,6 @@
 
  local menud334dfcea59127bedfcdbe0a3ee7f494 = {
      {"Agave", "agave", "/usr/share/icons/hicolor/16x16/apps/agave.png" },
-     {"Boxy SVG", "env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/boxy-svg_boxy-svg.desktop /var/lib/snapd/snap/bin/boxy-svg ", "///var/lib/snapd/snap/boxy-svg/51/meta/gui/icon.png" },
      {"Color Picker", "gcolor3"},
      {"Darktable", "/usr/bin/darktable ", "/usr/share/icons/hicolor/16x16/apps/darktable.png" },
      {"Document Scanner", "simple-scan"},
@@ -112,6 +110,7 @@
      {"KDE Connect Indicator", "kdeconnect-indicator"},
      {"KDE Connect SMS", "kdeconnect-sms"},
      {"LanXchange", "lxcr", "/usr/share/pixmaps/lanxchange.png" },
+     {"Mullvad VPN", "\"/opt/Mullvad VPN/mullvad-vpn\" ", "/usr/share/icons/hicolor/16x16/apps/mullvad-vpn.png" },
      {"Open on connected device via KDE Connect", "kdeconnect-handler --open "},
      {"Slack", "/usr/bin/slack -s ", "/usr/share/pixmaps/slack.png" },
      {"Steam (Native)", "/usr/bin/steam-native ", "/usr/share/icons/hicolor/16x16/apps/steam.png" },
@@ -127,6 +126,7 @@
      {"Zenmap", "zenmap ", "///usr/share/zenmap/pixmaps/zenmap.png" },
      {"Zenmap (as root)", "/usr/share/zenmap/su-to-zenmap.sh ", "///usr/share/zenmap/pixmaps/zenmap.png" },
      {"Zoom", "/usr/bin/zoom ", "/usr/share/pixmaps/Zoom.png" },
+     {"qBittorrent", "qbittorrent ", "/usr/share/icons/hicolor/16x16/apps/qbittorrent.png" },
  }
 
  local menudf814135652a5a308fea15bff37ea284 = {
@@ -153,17 +153,18 @@
  local menue6f43c40ab1c07cd29e4e83e4ef6bf85 = {
      {"Android Studio", "android-studio ", "/usr/share/pixmaps/android-studio.png" },
      {"Arduino IDE", "arduino ", "/usr/share/icons/hicolor/16x16/apps/arduino.png" },
-     {"Atom", "env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom ", "/usr/share/icons/hicolor/16x16/apps/atom.png" },
+     {"Atom", "env ATOM_DISABLE_SHELLING_OUT_FOR_ENVIRONMENT=false /usr/bin/atom "},
      {"BlueGriffon", "bluegriffon", "/usr/share/icons/hicolor/16x16/apps/bluegriffon.png" },
      {"Bluefish Editor", "bluefish ", "/usr/share/icons/hicolor/16x16/apps/bluefish.png" },
      {"Boxes", "gnome-boxes "},
-     {"Brackets", "env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/brackets_brackets.desktop /var/lib/snapd/snap/bin/brackets ", "///var/lib/snapd/snap/brackets/138/usr/share/icons/hicolor/scalable/apps/brackets.svg" },
      {"CMake", "cmake-gui ", "/usr/share/icons/hicolor/32x32/apps/CMakeSetup.png" },
      {"Electron", "electron ", "/usr/share/pixmaps/electron.png" },
      {"Electron", "electron7 ", "/usr/share/pixmaps/electron7.png" },
      {"Electron", "electron6 ", "/usr/share/pixmaps/electron6.png" },
      {"Electron 11", "electron11 ", "/usr/share/pixmaps/electron11.png" },
+     {"Electron 12", "electron12 ", "/usr/share/pixmaps/electron12.png" },
      {"Electron 13", "electron13 ", "/usr/share/pixmaps/electron13.png" },
+     {"Electron 15", "electron15 ", "/usr/share/pixmaps/electron15.png" },
      {"Electron 4", "electron4 ", "/usr/share/pixmaps/electron4.png" },
      {"Electron 9", "electron9 ", "/usr/share/pixmaps/electron9.png" },
      {"Geany", "geany ", "/usr/share/icons/hicolor/16x16/apps/geany.png" },
@@ -174,7 +175,7 @@
      {"Meld", "meld ", "/usr/share/icons/hicolor/16x16/apps/org.gnome.meld.png" },
      {"Mono Documentation", "/usr/bin/monodoc", "/usr/share/icons/hicolor/16x16/apps/monodoc.png" },
      {"MonoDevelop", "monodevelop ", "/usr/share/icons/hicolor/16x16/apps/monodevelop.png" },
-     {"MySQL Workbench", "sh -c 'GTK_THEME=Adwaita mysql-workbench '", "/usr/share/icons/hicolor/16x16/apps/mysql-workbench.png" },
+     {"MySQL Workbench", "mysql-workbench ", "/usr/share/icons/hicolor/16x16/apps/mysql-workbench.png" },
      {"Qt Assistant", "assistant", "/usr/share/icons/hicolor/32x32/apps/assistant.png" },
      {"Qt Designer", "designer ", "/usr/share/icons/hicolor/128x128/apps/QtProject-designer.png" },
      {"Qt Linguist", "linguist ", "/usr/share/icons/hicolor/16x16/apps/linguist.png" },
@@ -192,7 +193,6 @@
  local menu52dd1c847264a75f400961bfb4d1c849 = {
      {"Audacity", "env UBUNTU_MENUPROXY=0 audacity ", "/usr/share/icons/hicolor/16x16/apps/audacity.png" },
      {"Brasero", "brasero ", "/usr/share/icons/hicolor/16x16/apps/brasero.png" },
-     {"Celluloid", "celluloid "},
      {"Cheese", "cheese"},
      {"Clapper", "com.github.rafostar.Clapper "},
      {"EasyTAG", "easytag ", "/usr/share/icons/hicolor/16x16/apps/easytag.png" },
@@ -212,7 +212,7 @@
      {"SMTube", "smtube", "/usr/share/icons/hicolor/16x16/apps/smtube.png" },
      {"Shotcut", "shotcut ", "/usr/share/icons/hicolor/64x64/apps/org.shotcut.Shotcut.png" },
      {"SimpleScreenRecorder", "simplescreenrecorder --logfile", "/usr/share/icons/hicolor/16x16/apps/simplescreenrecorder.png" },
-     {"Spotify", "spotify ", "/usr/share/pixmaps/spotify-client.png" },
+     {"Spotify", "spotify --uri=", "/usr/share/pixmaps/spotify-client.png" },
      {"Transmageddon Video Transcoder", "transmageddon", "/usr/share/icons/hicolor/16x16/apps/transmageddon.png" },
      {"VLC media player", "/usr/bin/vlc --started-from-file ", "/usr/share/icons/hicolor/16x16/apps/vlc.png" },
      {"Video4Linux Control Panel", "v4l2ucp", "/usr/share/icons/v4l2ucp.png" },
@@ -223,7 +223,6 @@
  }
 
  local menuee69799670a33f75d45c57d1d1cd0ab3 = {
-     {"Alacritty", "alacritty", "/usr/share/pixmaps/Alacritty.svg" },
      {"Android File Transfer (MTP)", "android-file-transfer"},
      {"Avahi Zeroconf Browser", "/usr/bin/avahi-discover", "/usr/share/icons/gnome/16x16/devices/network-wired.png" },
      {"Boxes", "gnome-boxes "},
@@ -244,6 +243,7 @@
      {"OpenJDK Java 17 Shell", "xterm -e /usr/lib/jvm/java-17-openjdk/bin/jshell"},
      {"Oracle Java 17 Console", "/usr/lib/jvm/java-17-jdk/bin/jconsole", "/usr/share/icons/hicolor/16x16/apps/java-jdk.png" },
      {"Oracle Java 17 Shell", "xterm -e /usr/lib/jvm/java-17-jdk/bin/jshell", "/usr/share/icons/hicolor/16x16/apps/java-jdk.png" },
+     {"Oracle VM VirtualBox", "VirtualBox ", "/usr/share/icons/hicolor/16x16/mimetypes/virtualbox.png" },
      {"QTerminal", "qterminal", "/usr/share/icons/gnome/16x16/apps/utilities-terminal.png" },
      {"QTerminal drop down", "qterminal --drop", "/usr/share/icons/gnome/16x16/apps/utilities-terminal.png" },
      {"Software", "gnome-software "},
