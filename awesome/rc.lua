@@ -587,6 +587,7 @@ awful.rules.rules = {
       "Blueman-manager",
       "Gpick",
       "Gnome-calculator",
+      "Gnome-system-monitor",
       "Kruler",
       "MessageWin", -- kalarm.
       "Sxiv",
