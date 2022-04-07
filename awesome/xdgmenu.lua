@@ -101,7 +101,7 @@
      {"Avahi SSH Server Browser", "/usr/bin/bssh", "/usr/share/icons/gnome/16x16/devices/network-wired.png" },
      {"Avahi VNC Server Browser", "/usr/bin/bvnc", "/usr/share/icons/gnome/16x16/devices/network-wired.png" },
      {"Brave", "brave ", "/usr/share/icons/hicolor/16x16/apps/brave-desktop.png" },
-     {"Discord", "/usr/bin/discord", "/usr/share/pixmaps/discord.png" },
+     {"Discord", "/usr/bin/discord --force-device-scale-factor=1 --disable-gpu-driver-bug-workarounds --disable-gpu-vsync --use-gl=desktop --ignore-gpu-blocklist --enable-gpu-rasterization --enable-zero-copy --disable-features=UseOzonePlatform,UseChromeOSDirectVideoDecoder --enable-features=VaapiVideoEncoder,VaapiVideoDecoder,WebUIDarkMode,CanvasOopRasterization --force-dark-mode", "/usr/share/pixmaps/discord.png" },
      {"FileZilla", "filezilla", "/usr/share/icons/hicolor/16x16/apps/filezilla.png" },
      {"Firefox", "/usr/lib/firefox/firefox ", "/usr/share/icons/hicolor/16x16/apps/firefox.png" },
      {"FreeTube", "/opt/FreeTube/freetube "},
