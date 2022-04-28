@@ -315,7 +315,7 @@ globalkeys = gears.table.join(
     {description = "take a screenshot of an area of the screen", group = "launcher"}),
   awful.key({ modkey, "Mod1" }, "Delete", function () awful.spawn.easy_async_with_shell("xkill") end,
     {description = "kill a window by brute force", group = "launcher"}),
-  awful.key({ "Control", "Mod1" }, "Delete", function () awful.spawn("alacritty -e 'htop' -t 'Task Manager'") end,
+  awful.key({ "Control", "Mod1" }, "Delete", function () awful.spawn("alacritty -t 'Task Manager' -e 'htop'") end,
     {description = "Launch HTOP", group = "launcher"}),
 
   -- Brightness Hotkeys
