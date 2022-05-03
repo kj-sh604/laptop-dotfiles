@@ -599,8 +599,8 @@ awful.rules.rules = {
       "veromix",
       "xtightvncviewer",
       "zoom",
-      "[join?]*", -- Zoom Meeting client joined from a browser
-      "[start?]*", -- Zoom meeting client started from a browser
+      "[join\\?action]*", -- Zoom Meeting client joined from browser
+      "[start\\?action]*", -- Zoom Meeting client started from browser
     },
 
     -- Note that the name property shown in xprop might be set slightly after creation of the client
