@@ -21,4 +21,4 @@ endif
 
 vnoremap <C-c> "+y
 vmap <C-x> "+c
-map <C-p> "+P
+map <C-p> "+p
