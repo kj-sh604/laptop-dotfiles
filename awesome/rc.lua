@@ -349,13 +349,13 @@ awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell
   -- On-the-fly Window Gaps configuration
 
   awful.key({modkey}, "'", function () awful.tag.incgap(2)   end,
-                {description = "increase window gaps", group = "window gaps"}),
+                {description = "increase window gaps", group = "client"}),
 
   awful.key({modkey}, ";", function () awful.tag.incgap(-2)   end,
-                {description = "decrease window gaps", group = "window gaps"}),
+                {description = "decrease window gaps", group = "client"}),
 
-  awful.key({modkey}, "backslash", function () awful.tag.setgap(5)   end,
-                {description = "reset window gaps", group = "window gaps"}),    -- Warning: awful.tag.setgap() is deprecated
+  awful.key({modkey}, "backslash", function () awful.screen.focused().selected_tag.gap = 5   end,
+                {description = "reset window gaps", group = "client"}),
 
 
   -- Tiled Window Sizing and Client count/columns
