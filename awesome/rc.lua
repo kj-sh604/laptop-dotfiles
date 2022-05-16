@@ -316,7 +316,7 @@ globalkeys = gears.table.join(
   awful.key({ modkey, "Mod1" }, "Delete", function () awful.spawn.easy_async_with_shell("xkill") end,
     {description = "kill a window by brute force", group = "launcher"}),
   awful.key({ "Control", "Mod1" }, "Delete", function () awful.spawn("alacritty -t 'Task Manager' -e 'htop'") end,
-    {description = "Launch HTOP", group = "launcher"}),
+    {description = "launch HTOP", group = "launcher"}),
 
   -- Brightness Hotkeys
   awful.key({ }, "XF86MonBrightnessDown", function () awful.spawn.easy_async_with_shell("xbacklight -dec 15") end),
@@ -324,7 +324,7 @@ globalkeys = gears.table.join(
 
   -- Emoji Picker
   awful.key({ modkey }, "q", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.local/share/Blista-Kanjo-Emoji/blista-emoji-picker'") end,
-    {description = "Launch Emoji Chooser", group = "launcher"}),
+    {description = "launch Emoji Chooser", group = "launcher"}),
 
   -- Set Default Display Configuration on a laptop
 awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.config/awesome/default-screen-layout.sh'") end,
@@ -346,6 +346,16 @@ awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell
   awful.key({ modkey }, "grave", function () awful.spawn.easy_async_with_shell("xfce4-clipman-history") end,
                 {description = "open clipboard history", group = "launcher"}),
 
+  -- On-the-fly Window Gaps configuration
+
+  awful.key({modkey}, "'", function () awful.tag.incgap(2)   end,
+                {description = "increase window gaps", group = "window gaps"}),
+
+  awful.key({modkey}, ";", function () awful.tag.incgap(-2)   end,
+                {description = "decrease window gaps", group = "window gaps"}),
+
+  awful.key({modkey}, "backslash", function () awful.tag.setgap(5)   end,
+                {description = "reset window gaps", group = "window gaps"}),    -- Warning: awful.tag.setgap() is deprecated
 
 
   -- Tiled Window Sizing and Client count/columns
