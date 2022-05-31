@@ -25,7 +25,7 @@
      {"Kate", "kate -b ", "/usr/share/icons/hicolor/16x16/apps/kate.png" },
      {"Maps", "gapplication launch org.gnome.Maps "},
      {"Onboard", "onboard", "/usr/share/icons/hicolor/16x16/apps/onboard.png" },
-     {"Passwords and Keys", "seahorse"},
+     {"Passwords and Keys", "seahorse "},
      {"QTalarm", "qtalarm", "/usr/share/icons/hicolor/16x16/apps/1349069370_Alarm_Clock.png" },
      {"Screenshot", "xfce4-screenshooter", "/usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png" },
      {"Shutter Encoder", "shutter-encoder", "///usr/lib/Shutter Encoder/usr/bin/icon.png" },
@@ -33,7 +33,7 @@
      {"To Do", "gnome-todo"},
      {"USB Image Writer", "mintstick -m iso"},
      {"USB Stick Formatter", "mintstick -m format"},
-     {"Vim", "alacritty -e vim ", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
+     {"Vim", "xterm -e vim ", "/usr/share/icons/hicolor/48x48/apps/gvim.png" },
      {"Weather", "gapplication launch org.gnome.Weather"},
      {"Winetricks", "winetricks --gui"},
      {"nitrogen", "nitrogen", "/usr/share/icons/hicolor/16x16/apps/nitrogen.png" },
@@ -54,7 +54,7 @@
  }
 
  local menude7a22a0c94aa64ba2449e520aa20c99 = {
-     {"BibleTime ", "bibletime"},
+     {"BibleTime 3.0.3", "bibletime"},
      {"LibreOffice Math", "libreoffice --math ", "/usr/share/icons/hicolor/16x16/apps/libreoffice-math.png" },
  }
 
@@ -257,6 +257,7 @@
      {"Oracle Java 18 Console", "/usr/lib/jvm/java-18-jdk/bin/jconsole", "/usr/share/icons/hicolor/16x16/apps/java-jdk.png" },
      {"Oracle Java 18 Shell", "xterm -e /usr/lib/jvm/java-18-jdk/bin/jshell", "/usr/share/icons/hicolor/16x16/apps/java-jdk.png" },
      {"Oracle VM VirtualBox", "VirtualBox ", "/usr/share/icons/hicolor/16x16/mimetypes/virtualbox.png" },
+     {"Parental Controls", "malcontent-control"},
      {"Software", "gnome-software "},
      {"Startup Disk Creator", "usb-creator-kde"},
      {"System Monitor", "gnome-system-monitor"},
