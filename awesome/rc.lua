@@ -323,11 +323,15 @@ globalkeys = gears.table.join(
   awful.key({ }, "XF86MonBrightnessUp", function () awful.spawn.easy_async_with_shell("xbacklight -inc 15") end),
 
   -- Emoji Picker
-  awful.key({ modkey }, "q", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.local/share/Blista-Kanjo-Emoji/blista-emoji-picker'") end,
-    {description = "launch Emoji Chooser", group = "launcher"}),
+  awful.key({ modkey }, "q", function () awful.spawn.easy_async_with_shell("sh -c '~/.local/share/Blista-Kanjo-Emoji/blista-emoji-picker'") end,
+    {description = "launch emoji chooser", group = "launcher"}),
+
+  -- Spell Checker (Single Word)
+  awful.key({ modkey }, "w", function () awful.spawn.easy_async_with_shell("sh -c '~/.local/share/scripts/dym.sh'") end,
+    {description = "launch single word spell checker", group = "launcher"}),
 
   -- Set Default Display Configuration on a laptop
-awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '/home/kylert/.config/awesome/default-screen-layout.sh'") end,
+awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '~/.config/awesome/default-screen-layout.sh'") end,
                 {description = "reset to default monitor configuration", group = "launcher"}),
 
   -- awesome window manager Controls
@@ -674,7 +678,7 @@ gears.timer {
 
 -- awful.spawn.with_shell("")
 -- awful.spawn.easy_async_with_shell("")
-awful.spawn.easy_async_with_shell("/home/kylert/.config/awesome/autorun.sh")
+awful.spawn.easy_async_with_shell("~/.config/awesome/autorun.sh")
 
 -- Client Swallowing Function
 
