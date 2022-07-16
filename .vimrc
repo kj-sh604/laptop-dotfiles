@@ -75,12 +75,20 @@ vnoremap <C-c> "+y
 vmap <C-x> "+c
 map <C-p> "+p
 
+" NERDTree Keybinds
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 " ╔═╗┬  ┬ ┬┌─┐┬┌┐┌  ╔╦╗┌─┐┌┐┌┌─┐┌─┐┌─┐┬─┐
 " ╠═╝│  │ ││ ┬││││  ║║║├─┤│││├─┤│ ┬├┤ ├┬┘
 " ╩  ┴─┘└─┘└─┘┴┘└┘  ╩ ╩┴ ┴┘└┘┴ ┴└─┘└─┘┴└─
 
 call plug#begin()
-Plug 'ycm-core/YouCompleteMe'
 Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'LunarWatcher/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf'
 call plug#end()
