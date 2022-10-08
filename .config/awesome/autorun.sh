@@ -33,7 +33,7 @@ run /usr/bin/gnome-keyring-daemon --start --components=secrets
 run /usr/bin/gnome-keyring-daemon --start --components=ssh
 run ~/.config/awesome/xinput-daemon.sh
 run blueman-applet
-run indicator-keylock
+# run indicator-keylock
 run xfce4-power-manager
 run /usr/lib/xfce4/notifyd/xfce4-notifyd
 run ibus-daemon -drxR
