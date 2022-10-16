@@ -35,7 +35,7 @@ run ~/.config/awesome/xinput-daemon.sh
 run blueman-applet
 # run indicator-keylock
 run xfce4-power-manager
-run /usr/lib/xfce4/notifyd/xfce4-notifyd
+run dunst
 run ibus-daemon -drxR
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 run wineserver
