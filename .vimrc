@@ -73,7 +73,6 @@ endif
 
 vnoremap <C-c> "+y
 vmap <C-x> "+x
-map <C-P> "+P
 map <C-p> "+p
 
 " NERDTree Keybinds
