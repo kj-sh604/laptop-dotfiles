@@ -317,7 +317,7 @@ globalkeys = gears.table.join(
     {description = "take a screenshot of the active window", group = "launcher"}),
   awful.key({ "Shift" }, "Print", function () awful.spawn.easy_async_with_shell("xfce4-screenshooter -r --mouse") end,
     {description = "take a screenshot of an area of the screen", group = "launcher"}),
-  awful.key({ modkey, "Control" }, "x", function () awful.spawn.easy_async_with_shell("xkill") end,
+  awful.key({ modkey }, "x", function () awful.spawn.easy_async_with_shell("xkill") end,
     {description = "kill a window by brute force", group = "launcher"}),
   awful.key({ "Control", "Mod1" }, "Delete", function () awful.spawn("alacritty -t 'Task Manager' -e 'htop'") end,
     {description = "launch HTOP", group = "launcher"}),
@@ -405,19 +405,37 @@ awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell
     {description = "restore minimized", group = "client"}),
 
   -- Prompt
-  awful.key({ "Mod1" }, "F2", function () awful.screen.focused().mypromptbox:run() end,
+  awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
     {description = "run prompt", group = "launcher"}),
 
-  awful.key({ modkey }, "x",
+  -- Prompt (Alternate Keybind)
+  awful.key({ "Mod1" },            "F2",     function () awful.screen.focused().mypromptbox:run() end,
+    {description = "run prompt", group = "launcher"}),
+
+  -- Lua Prompt
+  awful.key({ modkey, "Mod1" }, "r",
     function ()
       awful.prompt.run {
-        prompt = "Run Lua code: ",
-        textbox = awful.screen.focused().mypromptbox.widget,
+        prompt       = "Run Lua code: ",
+        textbox      = awful.screen.focused().mypromptbox.widget,
         exe_callback = awful.util.eval,
         history_path = awful.util.get_cache_dir() .. "/history_eval"
       }
     end,
     {description = "lua execute prompt", group = "awesome"}),
+
+  -- Lua Prompt (Alternate Keybind)
+  awful.key({ "Mod1" }, "F3",
+    function ()
+      awful.prompt.run {
+        prompt       = "Run Lua code: ",
+        textbox      = awful.screen.focused().mypromptbox.widget,
+        exe_callback = awful.util.eval,
+        history_path = awful.util.get_cache_dir() .. "/history_eval"
+      }
+    end,
+    {description = "lua execute prompt", group = "awesome"}),
+
   -- Menubar
   awful.key({ "Shift" }, "space", function() menubar.refresh() menubar.show() end,
     {description = "show the menubar", group = "launcher"})
