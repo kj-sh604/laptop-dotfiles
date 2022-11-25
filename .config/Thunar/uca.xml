@@ -14,7 +14,7 @@
 	<icon>7765_winebrowser.0</icon>
 	<name>Open as ROOT</name>
 	<unique-id>1632282837629380-1</unique-id>
-	<command>gksudo dbus-launch thunar %f</command>
+	<command>lxsudo dbus-launch thunar %f</command>
 	<description>Open a directory as a root user</description>
 	<patterns>*</patterns>
 	<directories/>
@@ -23,7 +23,7 @@
 	<icon>1846_whatsnew.0</icon>
 	<name>Edit as ROOT</name>
 	<unique-id>1632282949135048-2</unique-id>
-	<command>gksudo dbus-launch xed %f</command>
+	<command>lxsudo dbus-launch gvim %f</command>
 	<description>Edit a file or something else as a root user</description>
 	<patterns>*</patterns>
 	<other-files/>
