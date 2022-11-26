@@ -3,10 +3,11 @@ if status is-interactive
         fish_vi_key_bindings   
 
     # Personal Aliases
-        alias s="cd ~/.local/share/scripts && lsd --group-dirs first -h --icon-theme unicode -L"
+        alias s="cd ~/.local/share/scripts && uu-ls --group-directories-first -h -p --color -F"
         alias d="disown"
         alias c="cal"
         alias w="curl wttr.in"
+        alias x="startx"
 
     # Pomodoro Timer Aliases | Thanks to @bashbunni and @caarlos0
         alias work="timer 30m && notify-send \
@@ -21,7 +22,7 @@ if status is-interactive
 
     # Command Substitutions | I'm trying out the Rust Coreutils Re-write via the coreutils-hybrid package
         alias echo="uu-echo"
-        alias ls="lsd --group-dirs first -h --icon-theme unicode -L"
+        alias ls="uu-ls --group-directories-first -h -p --color -F"
         alias pwd="uu-pwd"
         alias groups=uu-groups
         alias kill=uu-kill
