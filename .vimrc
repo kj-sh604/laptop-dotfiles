@@ -13,6 +13,7 @@
 " ├┴┐├─┤└─┐││    ├┬┘│ ││││  │  │ │││││││├─┤│││ ││└─┐
 " └─┘┴ ┴└─┘┴└─┘  ┴└─└─┘┘└┘  └─┘└─┘┴ ┴┴ ┴┴ ┴┘└┘─┴┘└─┘
 
+colorscheme one
 filetype plugin on
 syntax on
 set number
@@ -61,7 +62,7 @@ if has('gui_running')
 endif
 
 " enable true colors support "
-"set termguicolors
+set termguicolors
 
 if $TERM == 'alacritty'
   set ttymouse=sgr
