@@ -13,7 +13,7 @@ apply_settings () {
 
   ## libinput Trackpoint Settings
   xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "libinput Scrolling Pixel Distance" 10
-  xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.800000
+  xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.000000
 }
 
 apply_settings
