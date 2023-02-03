@@ -34,9 +34,11 @@ run /usr/bin/gnome-keyring-daemon --start --components=ssh
 run ~/.config/awesome/xinput-daemon.sh
 run blueman-applet
 # run indicator-keylock
-run xfce4-power-manager
+# run xfce4-power-manager
+run light-locker
+run lxqt-powermanagement
 run dunst
 run ibus-daemon -drxR
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 run wineserver
-run cbatticon -x xfce4-power-manager-settings
+# run cbatticon -x xfce4-power-manager-settings
