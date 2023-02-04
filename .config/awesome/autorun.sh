@@ -7,7 +7,7 @@ run () {
   fi
 }
 
-run picom
+run picom -b
 run nitrogen --restore
 run volumeicon
 # run lxsession
@@ -36,7 +36,7 @@ run ~/.config/awesome/dpms.sh
 run blueman-applet
 # run indicator-keylock
 # run xfce4-power-manager
-run xss-lock slock
+run xss-lock i3lock-fancy
 run dunst
 run ibus-daemon -drxR
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
