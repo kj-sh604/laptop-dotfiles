@@ -59,8 +59,8 @@ awful.layout.layouts = {
 }
 -- }}}
 
--- {{{ Menu
--- Create a launcher widget and a main menu
+-- {{{ Sub-Menus
+-- Create sub-menus for different system functions
 s_menu = {
   { "off", function() awful.spawn.easy_async_with_shell("xset s off off") end },
   { "10 # 10s", function() awful.spawn.easy_async_with_shell("xset s 10 0") end },
@@ -97,18 +97,25 @@ dpms_menu = {
   { "21600 # 6h", function() awful.spawn.easy_async_with_shell("xset dpms 0 0 21600") end },
 }
 
+dunst_menu = {
+  { "history-pop", function() awful.spawn.easy_async_with_shell("dunstctl history-pop") end },
+  { "set-paused true", function() awful.spawn.easy_async_with_shell("dunstctl set-paused true") end },
+  { "set-paused false", function() awful.spawn.easy_async_with_shell("dunstctl set-paused false") end },
+}
+-- }}}
+
+-- {{{ Menu
+-- Create a launcher widget and a main menu
 myawesomemenu = {
   { "show hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
   --   { "manual", terminal .. " -e man awesome" },
   { "xset s", s_menu },
   { "xset dpms", dpms_menu },
+  { "dunstctl", dunst_menu },
   { "config file", editor .. " " .. awesome.conffile },
   { "picom config", function() awful.spawn.easy_async_with_shell("sh -c 'gvim  $HOME/.config/picom.conf'") end },
   { "change wallpaper", function() awful.spawn.easy_async_with_shell("sh -c 'nitrogen'") end },
   { "xdg_menu refresh", function() awful.spawn.easy_async_with_shell("sh -c 'xdg_menu --format awesome --root-menu /etc/xdg/menus/arch-applications.menu > ~/.config/awesome/xdgmenu.lua'") end },
-  { "dunst_hist", function() awful.spawn.easy_async_with_shell("dunstctl history-pop") end },
-  { "dunst=0", function() awful.spawn.easy_async_with_shell("dunstctl set-paused true") end },
-  { "dunst=1", function() awful.spawn.easy_async_with_shell("dunstctl set-paused false") end },
   { "refresh", awesome.restart },
   { "reboot", function() awful.spawn("sh -c 'lxsudo reboot now'") end },
   --   { "quit", function() awesome.quit() end },
