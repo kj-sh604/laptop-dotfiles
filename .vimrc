@@ -58,7 +58,7 @@ if has('gui_running')
   set guioptions-=T
   set guioptions-=r
   set guioptions-=L
-  colorscheme slate
+  colorscheme tender
 endif
 
 " enable true colors support "
