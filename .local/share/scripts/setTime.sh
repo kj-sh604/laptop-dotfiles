@@ -31,13 +31,16 @@ if [ "$automatic_time_input" = "y" ] || [ "$automatic_time_input" = "Y" ]; then
   sudo timedatectl set-ntp true
   echo "Automatic time synchronization using NTP initiated."
 else
-  # Prompt the user for time input
+  # Prompt the user for date and time input
+  echo "Enter the desired date (format: YYYY-MM-DD):"
+  read -r date_input
   echo "Enter the desired time (format: HH:MM:SS):"
   read -r time_input
-
+  
   # Override NTP setting
   sudo timedatectl set-ntp false
-  # Set the system time
-  sudo date +%T -s "$time_input"
-  echo "Manual time setting complete."
+
+  # Set the system date and time
+  sudo timedatectl set-time "$date_input $time_input"
+  echo "Manual date and time setting complete."
 fi
