@@ -1,11 +1,13 @@
-app=kolourpaint
+app=gimp-2.10
 last_user=
-screenshot_dir=file:/home/kylert/Desktop
+screenshot_dir=file:/home/kylert/Documents/School Documents/Franklin University/2023/Summer Semester/COMP325/Works/Journal 1 Attendance Proof
 action=1
-delay=0
-region=3
+delay=3
+region=1
 show_mouse=1
 last_extension=png
 enable_imgur_upload=true
 show_border=1
+show_in_folder=false
+custom_action_command=none
 

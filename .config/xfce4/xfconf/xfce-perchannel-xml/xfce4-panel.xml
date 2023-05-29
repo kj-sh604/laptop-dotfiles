@@ -27,10 +27,10 @@
       </property>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-rgba" type="array">
-        <value type="double" value="0.188235"/>
-        <value type="double" value="0.188235"/>
-        <value type="double" value="0.188235"/>
-        <value type="double" value="0.300000"/>
+        <value type="double" value="0.18823500000000001"/>
+        <value type="double" value="0.18823500000000001"/>
+        <value type="double" value="0.18823500000000001"/>
+        <value type="double" value="0.29999999999999999"/>
       </property>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="disable-struts" type="bool" value="false"/>
@@ -108,6 +108,8 @@
         <value type="string" value="indicator-keylock"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="emojione-picker"/>
+        <value type="string" value="bluetooth disabled"/>
         <value type="string" value="clipman"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="system-config-printer"/>
@@ -178,6 +180,7 @@
       </property>
       <property name="settings" type="empty">
         <property name="save-on-quit" type="bool" value="true"/>
+        <property name="max-texts-in-history" type="uint" value="990"/>
       </property>
     </property>
     <property name="plugin-1" type="string" value="whiskermenu"/>

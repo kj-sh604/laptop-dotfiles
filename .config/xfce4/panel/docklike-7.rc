@@ -3,6 +3,6 @@ pinned=/usr/share/applications/thunar.desktop;/usr/share/applications/google-chr
 indicatorStyle=0
 onlyDisplayVisible=true
 noWindowsListIfSingle=false
-showWindowCount=true
+showWindowCount=false
 indicatorColor=rgb(76,166,230)
 inactiveColor=rgb(21,83,158)

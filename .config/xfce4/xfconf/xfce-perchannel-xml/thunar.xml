@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="thunar" version="1.0">
-  <property name="last-view" type="string" value="ThunarIconView"/>
+  <property name="last-view" type="string" value="ThunarDetailsView"/>
   <property name="last-location-bar" type="string" value="ThunarLocationButtons"/>
-  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_150_PERCENT"/>
+  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_200_PERCENT"/>
   <property name="last-separator-position" type="int" value="170"/>
   <property name="last-show-hidden" type="bool" value="true"/>
-  <property name="last-window-width" type="int" value="864"/>
-  <property name="last-window-height" type="int" value="582"/>
+  <property name="last-window-width" type="int" value="1892"/>
+  <property name="last-window-height" type="int" value="1030"/>
   <property name="last-window-maximized" type="bool" value="false"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="misc-file-size-binary" type="bool" value="false"/>
@@ -16,5 +16,11 @@
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_16"/>
   <property name="last-side-pane" type="string" value="ThunarShortcutsPane"/>
-  <property name="misc-date-style" type="string" value="THUNAR_DATE_STYLE_SHORT"/>
+  <property name="misc-date-style" type="string" value="THUNAR_DATE_STYLE_CUSTOM_SIMPLE"/>
+  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
+  <property name="last-details-view-column-widths" type="string" value="50,168,141,50,141,659,50,64,950,523,50,64,50,566"/>
+  <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
+  <property name="misc-date-custom-style" type="string" value="%m/%d/%Y (%a) %H%M"/>
+  <property name="misc-thumbnail-draw-frames" type="bool" value="true"/>
+  <property name="last-splitview-separator-position" type="int" value="383"/>
 </channel>

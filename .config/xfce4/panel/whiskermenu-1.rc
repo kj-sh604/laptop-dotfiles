@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=thunar.desktop,google-chrome.desktop,xfce-wm-settings.desktop,xfce-keyboard-settings.desktop,insync.desktop,xfce-mouse-settings.desktop,xfce4-power-manager-settings.desktop,vmware-view.desktop,clipgrab.desktop,org.kde.kdenlive.desktop
+recent=thunar.desktop,google-chrome.desktop,xfce-keyboard-settings.desktop,filezilla.desktop,xfce-mouse-settings.desktop,firefox.desktop,chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop,discord.desktop,org.gnome.Evolution.desktop,xfce4-power-manager-settings.desktop
 button-icon=/home/kylert/Pictures/1024px-Archlinux-icon-crystal-64.svg.png
 button-single-row=false
 show-button-title=true
