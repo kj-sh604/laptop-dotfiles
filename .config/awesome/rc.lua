@@ -382,7 +382,7 @@ globalkeys = gears.table.join(
     {description = "launch single word spell checker", group = "launcher"}),
 
   -- Set Default Display Configuration on a laptop
-awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '~/.config/awesome/default-screen-layout.sh'") end,
+  awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '~/.config/awesome/default-screen-layout.sh'") end,
                 {description = "reset to default monitor configuration", group = "launcher"}),
 
   -- awesome window manager Controls
