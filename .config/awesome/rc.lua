@@ -391,10 +391,15 @@ awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell
   --[[awful.key({ "Control", "Shift"   }, "Delete", awesome.quit
               {description = "quit awesome", group = "awesome"}),]]--
 
+  -- Kill All User Processes including X11 (logs user out)
   --[[    awful.key({ "Control", "Mod1"          }, "BackSpace", function () awful.spawn("sh -c 'pkill -9 -u $USER'") end,
               {description = "quit awesome", group = "launcher"}), ]]--
 
+  -- GUI Task Manager / System Monitor
   awful.key({ modkey, "Control" }, "Delete", function () awful.spawn("gnome-system-monitor") end,
+    {description = "gnome-system-monitor", group = "launcher"}),
+
+  awful.key({ "Control", "Shift" }, "Escape", function () awful.spawn("gnome-system-monitor") end,
     {description = "gnome-system-monitor", group = "launcher"}),
 
   -- Clipboard Manager
