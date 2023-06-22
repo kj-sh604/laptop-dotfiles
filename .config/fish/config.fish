@@ -9,6 +9,8 @@ if status is-interactive
         alias w="curl wttr.in"
         alias x="startx"
         alias t="timedatectl"
+        alias p="yay"
+        alias u="yay -Syyu --devel"
         alias neofetch="alsi"
 
     # youtube-dl aliases
