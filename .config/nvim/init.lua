@@ -1,7 +1,7 @@
 -- init.lua
 
 -- Use System Clipboard
-vim.opt.clipboard = "unnamedplus"
+-- vim.opt.clipboard = "unnamedplus"
 
 -- Basic run commands
 vim.cmd("colorscheme tender")
