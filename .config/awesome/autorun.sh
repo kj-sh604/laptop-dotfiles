@@ -42,3 +42,6 @@ run ibus-daemon -drxR
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 run wineserver
 run cbatticon
+run /usr/lib/evolution-addressbook-factory
+run /usr/lib/evolution-calendar-factory
+run /usr/lib/evolution-source-registry
