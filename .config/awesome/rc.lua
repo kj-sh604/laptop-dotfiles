@@ -678,6 +678,7 @@ awful.rules.rules = {
       "Arandr",
       "Blueman-manager",
       "DateTime.py",
+      "Evolution-alarm-notify",
       "Gpick",
       "Gnome-calculator",
       "gnome-calculator",
