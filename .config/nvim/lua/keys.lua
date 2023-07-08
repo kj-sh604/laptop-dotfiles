@@ -20,3 +20,24 @@ vim.api.nvim_set_keymap("n", "<leader>/", ":NERDTreeFind<CR>", { noremap = true 
 
 -- spell check keybinds
 vim.api.nvim_set_keymap("n", "<leader>sc", ":set spell!<CR>", { silent = true })
+
+-- splits and vsplits creation rebinds
+vim.api.nvim_set_keymap('n', '<A-s>', '<C-W>v', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-d>', '<C-W>s', { noremap = true })
+
+-- splits quit and save&quit
+vim.api.nvim_set_keymap('n', '<A-q>', 'ZQ', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-z>', 'ZZ', { noremap = true })
+
+-- splits and vsplits movement rebinds
+vim.api.nvim_set_keymap('n', '<A-j>', '<C-W>j', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-k>', '<C-W>k', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-l>', '<C-W>l', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-h>', '<C-W>h', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-w>', '<C-W>w', { noremap = true })
+
+-- splits and vsplits resize rebinds
+vim.api.nvim_set_keymap('n', '<A-,>', '<C-W>5<', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-.>', '<C-W>5>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-->', '<C-W>5-', { noremap = true })
+vim.api.nvim_set_keymap('n', '<A-=>', '<C-W>5+', { noremap = true })
