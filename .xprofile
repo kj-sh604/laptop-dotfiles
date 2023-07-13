@@ -1,11 +1,6 @@
 setxkbmap -option compose:ralt
 xset r rate 300 50
 
-export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_STATE_HOME="$HOME/.local/state"
-
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export GOPATH="$XDG_DATA_HOME"/go
 export GOMODCACHE="$XDG_CACHE_HOME"/go/mod
@@ -15,6 +10,9 @@ export WGETRC="$XDG_CONFIG_HOME"/wget/wgetrc
 export INPUTRC="$XDG_CONFIG_HOME"/shell/inputrc
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export HISTFILE="$XDG_DATA_HOME"/bash/history
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export WINEPREFIX="$XDG_DATA_HOME"/wine
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/settings.ini
 
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME}/ansible.cfg"
@@ -120,5 +118,3 @@ export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
 export W3M_DIR="$XDG_STATE_HOME/w3m"
 export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
 export _Z_DATA="$XDG_DATA_HOME/z"
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg
-export WINEPREFIX="$XDG_DATA_HOME"/wine
