@@ -333,7 +333,7 @@ globalkeys = gears.table.join(
     {description = "swap with next window right", group = "client"}),
   awful.key({ modkey, "Control" }, "Left", function () awful.client.swap.global_bydirection("left") client.focus:raise() end,
     {description = "swap with next window left", group = "client"}),
-  
+
   -- Move window FOCUS by direction in tiling layout
   awful.key({ modkey, "Mod1" }, "Down", function () awful.client.focus.global_bydirection("down") client.focus:raise() end,
     {description = "focus to next window up", group = "client"}),
