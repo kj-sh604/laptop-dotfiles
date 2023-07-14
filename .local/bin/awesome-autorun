@@ -23,8 +23,8 @@ run /usr/lib/at-spi-bus-launcher --launch-immediately
 run /usr/bin/gnome-keyring-daemon --start --components=pkcs11
 run /usr/bin/gnome-keyring-daemon --start --components=secrets
 run /usr/bin/gnome-keyring-daemon --start --components=ssh
-run ~/.config/awesome/xinput-daemon.sh
-run ~/.config/awesome/dpms.sh
+run ~/.local/bin/awesome-xinputD
+run ~/.local/bin/awesome-dpms
 run blueman-applet
 run xss-lock slock
 run dunst

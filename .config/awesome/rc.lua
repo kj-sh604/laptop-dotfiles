@@ -27,7 +27,7 @@ beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "alacritty -e nvim"
+editor = "alacritty -e nvim" or os.getenv("EDITOR") 
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -388,7 +388,7 @@ globalkeys = gears.table.join(
     {description = "launch single word spell checker", group = "launcher"}),
 
   -- Set Default Display Configuration on a laptop
-  awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '~/.config/awesome/default-screen-layout.sh'") end,
+  awful.key({ modkey,"Shift" }, "o", function () awful.spawn.easy_async_with_shell("sh -c '~/.local/bin/awesome-xrandr") end,
                 {description = "reset to default monitor configuration", group = "launcher"}),
 
   -- awesome window manager Controls
@@ -771,7 +771,7 @@ gears.timer {
 
 -- awful.spawn.with_shell("")
 -- awful.spawn.easy_async_with_shell("")
-awful.spawn.easy_async_with_shell("~/.config/awesome/autorun.sh")
+awful.spawn.easy_async_with_shell("~/.local/bin/awesome-autorun")
 
 -- Client Swallowing Function
 
