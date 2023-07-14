@@ -27,7 +27,7 @@ beautiful.init(theme_path)
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = "alacritty -e nvim" or os.getenv("EDITOR") 
+editor = "alacritty -e nvim" or os.getenv("EDITOR")
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -775,15 +775,15 @@ awful.spawn.easy_async_with_shell("~/.local/bin/awesome-autorun")
 
 -- Client Swallowing Function
 
-table_is_swallowed = { 
+table_is_swallowed = {
     "Alacritty" }
-table_minimize_parent = { 
+table_minimize_parent = {
     "mpv",
     "vlc",
     "MPlayer",
     "URxvt",
     "XTerm" }
-table_cannot_swallow = { 
+table_cannot_swallow = {
     "xev" }
 
 function is_in_Table(table, element)
@@ -867,4 +867,3 @@ client.connect_signal("manage", function(c)
 end)
 
 -- End Client Swallowing Function
-
