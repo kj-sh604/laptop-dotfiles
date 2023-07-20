@@ -62,7 +62,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
-theme.menu_submenu_icon = themes_path_system.."vide/submenu.png"
+theme.menu_submenu_icon = themes_path_system.."default/submenu.png"
 theme.menu_height = dpi(20)
 theme.menu_width  = dpi(170)
 
