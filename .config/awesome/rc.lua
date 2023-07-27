@@ -240,7 +240,7 @@ awful.screen.connect_for_each_screen(function(s)
   }
 
   -- create the wibox
-  s.mywibox = awful.wibar({ position = "top", screen = s, height = 20 })
+  s.mywibox = awful.wibar({ position = "top", screen = s, height = 18 })
 
   -- add widgets to the wibox
   s.mywibox:setup {
@@ -286,7 +286,7 @@ globalkeys = gears.table.join(
           myscreen = awful.screen.focused()
           myscreen.mywibox.visible = not myscreen.mywibox.visible
       end,
-      { description = "toggle wibar" }
+      { description = "toggle wibar", group = "awesome" }
   ),
 
   -- change window focus in maximized layout
