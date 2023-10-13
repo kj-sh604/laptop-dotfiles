@@ -4,7 +4,7 @@
 
 ![Image of my Linux Rice](https://aedrielkylejavier.me/assets/rice6.png)
 
-![Image of shortcuts for awesome-WM](https://aedrielkylejavier.me/assets/shortcuts0.png)
+![Image of shortcuts for awesome-WM](https://aedrielkylejavier.me/assets/shortcuts1.png)
 
 **dotfiles are updated nightly**
 
