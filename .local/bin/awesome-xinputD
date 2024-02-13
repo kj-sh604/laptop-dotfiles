@@ -7,7 +7,7 @@ apply_settings() {
     xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "libinput Scrolling Pixel Distance" 10
     xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.800000
     xinput set-prop pointer:"Logitech USB Trackball" "libinput Accel Speed" 1.000000
-    if [ -f ~/.Xmodmap ]; then xmodmap ~/.Xmodmap; fi
+    [ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
     
     ### Alternate TrackPoint settings using evdev ###
     # xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "Device Accel Profile" 2
