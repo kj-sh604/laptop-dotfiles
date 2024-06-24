@@ -13,7 +13,7 @@
   <property name="misc-always-show-tabs" type="bool" value="false"/>
   <property name="misc-bell" type="bool" value="false"/>
   <property name="misc-bell-urgent" type="bool" value="false"/>
-  <property name="misc-borders-default" type="bool" value="false"/>
+  <property name="misc-borders-default" type="bool" value="true"/>
   <property name="misc-cursor-blinks" type="bool" value="false"/>
   <property name="misc-cursor-shape" type="string" value="TERMINAL_CURSOR_SHAPE_BLOCK"/>
   <property name="misc-default-geometry" type="string" value="95x28"/>
@@ -42,4 +42,6 @@
   <property name="scrolling-unlimited" type="bool" value="true"/>
   <property name="title-initial" type="string" value="xterm-256color"/>
   <property name="title-mode" type="string" value="TERMINAL_TITLE_PREPEND"/>
+  <property name="shortcuts-no-menukey" type="bool" value="true"/>
+  <property name="shortcuts-no-mnemonics" type="bool" value="true"/>
 </channel>
