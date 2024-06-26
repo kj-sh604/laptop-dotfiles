@@ -43,3 +43,5 @@
 .local/src/dmenu-dunst/util.o
 
 # future ignores
+.local/share/python-playerctl_systray/playerctl_systray
+.local/share/python-playerctl_systray/playerctl_systray.c
