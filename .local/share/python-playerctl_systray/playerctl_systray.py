@@ -116,7 +116,7 @@ class playerctl_systray:
 
 def main():
     app = playerctl_systray()
-    GLib.timeout_add(1024, app.refresh_menu)  # probably should be event-based in the future
+    GLib.timeout_add(2000, app.refresh_menu)  # probably should be event-based in the future
     Gtk.main()
 
 if __name__ == "__main__":
