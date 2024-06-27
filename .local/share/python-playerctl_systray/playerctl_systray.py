@@ -64,7 +64,7 @@ class playerctl_systray:
             menu.append(a_menu_item)
         else:
             no_players_item = Gtk.MenuItem(label="no players found")
-            no_players_item.set_sensitive(False)  # Greyed out
+            no_players_item.set_sensitive(False)  # greyed out
             menu.append(no_players_item)
 
         menu.append(Gtk.SeparatorMenuItem())  # separator
@@ -116,7 +116,7 @@ class playerctl_systray:
 
 def main():
     app = playerctl_systray()
-    GLib.timeout_add(2000, app.refresh_menu)  # probably should be event-based in the future
+    GLib.timeout_add(1024, app.refresh_menu)  # probably should be event-based in the future
     Gtk.main()
 
 if __name__ == "__main__":
