@@ -5,14 +5,8 @@ apply_settings() {
     xinput set-prop pointer:"Synaptics TM3276-022" "Device Enabled" 0
     xinput set-prop pointer:"G2Touch Multi-Touch by G2TSP" "Device Enabled" 0
     xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "libinput Scrolling Pixel Distance" 10
-    xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.800000
     xinput set-prop pointer:"Logitech USB Trackball" "libinput Accel Speed" 1.000000
     [ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
-    
-    ### Alternate TrackPoint settings using evdev ###
-    # xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "Device Accel Profile" 2
-    # xinput set-prop pointer:"TPPS/2 IBM TrackPoint" "Device Accel Constant Deceleration" 0.450000
-
 }
 
 apply_settings
