@@ -16,6 +16,7 @@ SAVEHIST=9999999
 
 # aliases
     # personal aliases
+        alias S="cd ~/.local/bin && ls"
         alias c="cal"
         alias d="disown"
         alias dots="cd ~/.local/share/.dotfiles/"
@@ -23,12 +24,15 @@ SAVEHIST=9999999
         alias egrep='grep -E'
         alias fgrep='grep -F'
         alias grep='grep --colour=auto'
+        alias ks="killall screen"
         alias ls="ls --group-directories-first -h -p --color -F"
         alias neofetch="alsi"
         alias p="paru"
         alias printf="$(command which printf)"
         alias pu="paru -Syu --noconfirm"
-        alias s="cd ~/.local/bin && ls"
+        alias s="screen"
+        alias sl="screen -ls"
+        alias sr="screen -r"
         alias t="timedatectl"
         alias w="curl wttr.in"
         alias x="startx"
