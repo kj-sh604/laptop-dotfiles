@@ -1,7 +1,5 @@
 if status is-login
-    exec bash -c "test -e /etc/profile && source /etc/profile;\
-    test -e ~/.zprofile && source ~/.zprofile;\
-    exec fish"
+    exec bash -c 'for f in /etc/profile ~/.zprofile ~/.profile; do [ -e "$f" ] && source "$f"; done; exec fish'
 end
 
 if status is-interactive
