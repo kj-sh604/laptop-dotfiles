@@ -28,7 +28,8 @@ run dunst
 run ibus-daemon -drxR
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 run wineserver
-run ~/.local/src/dotfiles-extras/t480-cbatticon
+run ~/.local/src/dotfiles-extras/t480-BAT0-icon
+run ~/.local/src/dotfiles-extras/t480-BAT1-icon
 run /usr/lib/evolution-addressbook-factory
 run /usr/lib/evolution-calendar-factory
 run /usr/lib/evolution-source-registry
