@@ -124,10 +124,8 @@ cat >"$tmp_scales" <<'EOF'
 reset scaling	-	-
 EOF
 
-# present options (strip comment lines). Use fzf with --exact to make matching
-# stricter (slightly less fuzzy).
 chosen_scale=$(grep -v '^#' "$tmp_scales" | awk -F'\t' '{printf "%s\t%s\t%s\n",$1,$2,$3}' |
-    fzf --prompt="select scaling option: " --with-nth=1,2,3 --exact --tiebreak=index --preview='echo {}') || {
+    fzf --prompt="select scaling option: " --with-nth=1,2,3 --tiebreak=index --preview='echo {}') || {
     rm -f "$tmp_out" "${tmp_out}.list" "$tmp_scales"
     exit 1
 }
